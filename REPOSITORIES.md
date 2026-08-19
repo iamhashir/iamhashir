@@ -1,204 +1,293 @@
-# Repository Audit — Implementation First
+# Malik Hashir — Repository Audit & Portfolio Map
 
-This file is a working map of the repositories connected to my GitHub history.
+> **Identity rule:** `iamhashir`, `ihashirr`, and Malik Hashir are the same developer.
+>
+> `iamhashir` is the target **canonical professional account**. `ihashirr` is treated as a legacy identity whose contribution history should be preserved.
 
-The ranking is intentionally **not based on README quality or repository names**. A missing README is a presentation problem, not a technical-quality score.
+This file ranks the engineering work behind both personal GitHub accounts plus relevant collaborative work in `minapong`.
 
-## How projects are ranked
+A weak or missing README does **not** make a project weak. Ranking is based primarily on the implementation itself.
 
-Priority is based on:
+## Ranking method
 
-1. **Actual implementation depth** — source structure, architecture, algorithms, data flow, state management, networking, persistence, etc.
-2. **Real-world usefulness** — whether the project solves an operational/product problem rather than only demonstrating syntax.
-3. **Technical distinctiveness** — systems/networking, offline-first design, real-time state, native code, AI/OCR, integrations, etc.
-4. **Completeness** — meaningful feature surface, multiple modules, deployability, tests/docs where present.
-5. **Presentation** — README/screenshots/demo. This improves recruiter value, but it does not determine the underlying rank.
+1. Source-code and architecture depth
+2. Real-world usefulness
+3. Technical distinctiveness
+4. Completeness and feature surface
+5. Collaboration / systems complexity
+6. Presentation quality only after the above
 
 ### Audit legend
 
-- **✅ Code audited** — ranking is based on source files/dependencies/architecture inspected directly.
-- **◐ Partially audited** — enough implementation was inspected to place it approximately.
-- **○ Provisional** — mainly repository structure/metadata/history; needs a deeper source pass before final judgment.
-
-Two GitHub identities appear in this engineering history:
-
-- `iamhashir` — current primary profile
-- `ihashirr` — older CV-linked account/repositories that are also visible through the connected GitHub installation
+- **✅ Audited** — implementation inspected directly
+- **◐ Partially audited** — enough source inspected for placement
+- **○ Provisional** — needs deeper source inspection
 
 ---
 
-# Overall engineering ranking
+# Strongest engineering work
 
-## Tier S — Flagship / strongest portfolio material
+## Tier S — Flagship material
 
-These projects contain the strongest combination of implementation depth, real-world scope and recruiter value.
-
-| Rank | Project | Account | Visibility | Audit | Why it ranks highly | Presentation action |
+| Rank | Project | Current owner | Visibility | Audit | Why it matters | Portfolio action |
 |---:|---|---|---|---|---|---|
-| 1 | `mess-manager` | `ihashirr` | Private | ✅ | Modern React Native operations app with customers, subscriptions, menus, attendance, payments, expenses and orders. Includes a real SQLite offline cache, dirty/deleted state, queued synchronization/retries and OCR-assisted receipt entry. | **Private flagship / case study. README upgraded.** |
-| 2 | `42curcus` / `ft_transcendence` | `iamhashir` | Public | ✅ | Broad systems progression culminating in a real-time multiplayer platform. Strong C/C++ foundation plus WebSockets, Docker, backend architecture and custom frontend runtime work. | **Public flagship / pin.** |
-| 3 | `ipac-operations-app` | `iamhashir` | Private | ◐ | Substantial current Expo/React Native operations application using Supabase, charts, QR code generation, image workflows and a multi-module business domain. | **Private flagship / sanitized case study only.** |
-| 4 | `real_estate_management` | `iamhashir` | Public | ✅ | Modern full-stack operations product covering properties, clients, deal pipeline, agents, commissions, history, reporting and search. | **Public flagship / pin.** |
-| 5 | `IRC` | `ihashirr` | Public | ✅ | Real C++ network server using non-blocking sockets, `poll()`, per-client buffers, command parsing/dispatch, channel/user state and connection lifecycle management. | **Systems flagship. Existing README; polish visually if needed.** |
-| 6 | `Customer_service_agent` | `iamhashir` | Public | ✅ | WhatsApp Cloud API system with webhook handling, intent routing, conversational state, guided product flows, response rendering and human handoff. | **Public flagship / pin. README upgraded.** |
-| 7 | `secret-hitler` | `ihashirr` | Public | ✅ | Modern real-time browser game built with Next.js/React and Convex. Backend game logic alone is a large stateful module with a dedicated schema. | **Strong realtime project. README should be upgraded, but current connection is read-only.** |
-| 8 | `Audify` | `iamhashir` | Public | ✅ | Full-stack AI audio publishing app with OpenAI generation, Convex storage/data, Clerk auth, search/discovery and generated artwork. | **Public flagship / pin. README upgraded.** |
-| 9 | `Qrcode_nisrine` | `ihashirr` | Public | ✅ | Practical barcode-control-room application using Next.js, TypeScript, `bwip-js`, Sharp and server/API routes to generate company barcode assets. | **Strong business-tool project. Existing README.** |
-| 10 | `cv_portfolio` | `iamhashir` | Public | ✅ | Current portfolio is itself a modern frontend project using Next.js/React, Three.js/R3F, animation systems and Playwright performance/browser tests. | **Pin if recruiter-facing presentation remains polished.** |
-| 11 | `MINISHELLING` | `iamhashir` | Public | ✅ | Real shell implementation in C with tokenizer, parser, AST, expansion, globbing, heredoc, built-ins, pipelines, redirections, signals and process execution. | **Strong systems supporting project. README upgraded from two lines.** |
-| 12 | `Code-Smith` | `ihashirr` | Public | ✅ | Much stronger than its default README suggests: authenticated student/fee data entry, monthly paid/unpaid state, searchable records, reporting, PDF/XLSX/CSV export APIs and Firebase auth. | **README is badly underselling it; current connection is read-only.** |
+| 1 | [`ft_transcendence`](https://github.com/minapong/ft_transcendence) / **MINA GAMES** | `minapong` | Public | ✅ | Collaborative real-time multiplayer platform with WebSockets, Fastify, Prisma/SQLite, Docker/NGINX, matchmaking, tournaments, multiple games, authentication and the custom **Reactor** JSX/runtime architecture. Malik is documented as PO/PM/Developer and contributed across frontend architecture, Reactor, UI systems and backend work. | **Keep in org. Feature from main profile. Never duplicate/transfer to personal account.** |
+| 2 | `mess-manager` | `ihashirr` | Private | ✅ | Modern Expo/React Native operations app with customers, subscriptions, attendance, menus, payments, expenses and orders. Includes SQLite offline persistence, dirty/deleted state, a persistent sync queue, retry behavior and OCR-assisted receipt processing. | **Transfer to `iamhashir` privately. Private flagship / sanitized case study. README upgraded.** |
+| 3 | `ipac-operations-app` | `iamhashir` | Private | ✅ | Substantial business/operations mobile application using React Native/Expo and Supabase with operational data, reports, QR/image workflows and a large domain model. | **Keep private. Sanitized case study only.** |
+| 4 | [`real_estate_management`](https://github.com/iamhashir/real_estate_management) | `iamhashir` | Public | ✅ | Full-stack real-estate operations product: properties, clients, deal pipeline, agents, commissions, reporting, history and workflow management. | **Public flagship / pin candidate.** |
+| 5 | [`IRC`](https://github.com/ihashirr/IRC) | `ihashirr` | Public | ✅ | C++98 non-blocking IRC server using TCP sockets, `poll()`, per-client buffers, parsing/dispatch, registration state, channel state and real protocol commands. | **Transfer to `iamhashir`. Systems flagship. README upgraded.** |
+| 6 | [`secret-hitler`](https://github.com/ihashirr/secret-hitler) | `ihashirr` | Public | ✅ | Modern real-time browser multiplayer game using Next.js/React and Convex, with a substantial backend game-state module and dedicated schema. | **Transfer to `iamhashir`, then build a proper architecture README.** |
+| 7 | [`Customer_service_agent`](https://github.com/iamhashir/Customer_service_agent) | `iamhashir` | Public | ✅ | WhatsApp Cloud API automation with webhooks, intent routing, conversational state, guided product flows, response rendering and human handoff. | **Public flagship / pin candidate. README upgraded.** |
+| 8 | [`Audify`](https://github.com/iamhashir/Audify) | `iamhashir` | Public | ✅ | AI audio publishing app with OpenAI generation, Convex persistence/media, Clerk authentication and searchable/discoverable content. | **Public flagship. Canonical copy already on main account.** |
+| 9 | [`Qrcode_nisrine`](https://github.com/ihashirr/Qrcode_nisrine) | `ihashirr` | Public | ✅ | Next.js barcode/sticker generation system using `bwip-js`, Sharp, build-time data validation, GTIN/check-digit rules and generated print assets. | **Strong business tool. Transfer only after reviewing public client/business data.** |
+| 10 | [`Code-Smith`](https://github.com/ihashirr/Code-Smith) | `ihashirr` | Public | ✅ | Next.js data/fee-management application with authenticated workflows, payment state, records, uploads and server APIs including bill/PDF generation. | **Transfer to `iamhashir`; README currently undersells it badly.** |
+| 11 | [`cv_portfolio`](https://github.com/iamhashir/cv_portfolio) | `iamhashir` | Public | ✅ | Current interactive engineering portfolio using modern Next.js/React, Three.js/R3F, animation systems and Playwright/browser testing. | **Keep as canonical portfolio codebase.** |
+| 12 | [`42curcus`](https://github.com/iamhashir/42curcus) | `iamhashir` | Public | ✅ | Consolidated 42 engineering archive spanning C/C++, Unix, graphics, processes, concurrency, networking, Docker and the final MINA GAMES submodule. | **Keep public. This is the canonical home for most older 42 work.** |
 
 ---
 
-## Tier A — Strong supporting engineering work
+## Tier A — Strong supporting projects
 
-| Project | Account | Audit | What the code actually shows | Action |
+| Project | Current owner | Audit | What the implementation shows | Action |
 |---|---|---|---|---|
-| `philo` | `iamhashir` | ✅ | 42 concurrency project around threads, mutexes, timing and synchronization. | Keep public; strong systems proof. |
-| `Twitter_clone` | `iamhashir` | ✅ | **Not a web Twitter clone.** Native C++/openFrameworks tweet-data explorer loading a large CSV dataset, rendering responsive UI and topic-based interactive filters. | README added; consider renaming repo eventually. |
-| `Movie-Recommendation-System` | `ihashirr` | ✅ | Python/sklearn notebook using CountVectorizer, cosine similarity, numeric normalization, popularity ranking and matplotlib against a movie-opening dataset. | Good ML/data-science supporting project; README missing and repo is read-only here. |
-| `clevland` | `iamhashir` | ◐ | BiomedCLIP + local Mistral/Ollama medical-image/chat prototype with local-model inference. | Technically interesting, but **clarify provenance/authorship before featuring** because current README points to another clone source. |
-| `MultiPage` | `iamhashir` | ✅ | React Native/Expo food browsing app with category animation, local product model, native-stack navigation and detailed item screens. | README added; useful mobile-development history. |
-| `minitalk` | `ihashirr` | ◐ | 42-style Unix inter-process communication project. | Audit source deeper before final placement. |
-| `printf-42` | `ihashirr` | ◐ | Custom formatted-output implementation from the 42 curriculum. | Keep as systems/C foundation, not a pin. |
-| `42-libft` | `ihashirr` | ◐ | Foundational C utility library from 42. | Keep as technical history. |
-| `desizaiqa` | `iamhashir` | Private | ○ | Private AI/design-related project; not enough audited source in this pass to rank confidently. | Deep audit privately before case-study decision. |
-| `mit_portfolio` | `iamhashir` | Private | ○ | Newer private portfolio codebase. | Review against `cv_portfolio`; keep only one canonical public story. |
+| [`MINISHELLING`](https://github.com/iamhashir/MINISHELLING) | `iamhashir` | ✅ | C shell with tokenization, parsing/AST, expansion, heredocs, pipelines, redirections, built-ins, signals and process execution. | Keep public. README upgraded. |
+| `cube` | `ihashirr` | ✅ | Real Cub3D-style C raycaster: map parsing/validation, player initialization, raycasting, textured-wall rendering and movement. | **Do not transfer separately:** equivalent Cub3D work is already represented in `42curcus/rank4/cub3d`. |
+| [`philo`](https://github.com/iamhashir/philo) | `iamhashir` | ✅ | Dining Philosophers concurrency work using threads, mutexes, timing and monitoring. | Keep public but secondary; also represented in `42curcus/rank3`. |
+| [`Twitter_clone`](https://github.com/iamhashir/Twitter_clone) | `iamhashir` | ✅ | Despite the name, this is a C++/openFrameworks tweet-data visualization/explorer with CSV ingestion and interactive filtering. | Keep; README added. Consider eventual rename. |
+| `Movie-Recommendation-System` | `ihashirr` | ✅ | Python/sklearn notebook with CountVectorizer, cosine similarity, numeric normalization, popularity ranking and matplotlib analysis. | Optional transfer; add methodology/results README after transfer. |
+| `Arduino` | `ihashirr` | ✅ | ESP8266/FastLED embedded project with an on-device web server, WS2812B lighting effects and ultrasonic-sensor behavior. | **Good embedded/IoT breadth. Optional transfer to main account.** |
+| [`tourism_app`](https://github.com/iamhashir/tourism_app) | `iamhashir` | ✅ | React 18 tourism application with routing for all seven Emirates, media-heavy destination pages, map links and componentized UI. | **Canonical tourism source. README upgraded.** |
+| [`MultiPage`](https://github.com/iamhashir/MultiPage) | `iamhashir` | ✅ | React Native/Expo food-browsing interface with product model, native-stack navigation, detail screens and animation. | Keep as mobile-development history. README added. |
+| `minitalk` | `ihashirr` | ✅ | C client/server IPC using Unix signals with mandatory + bonus implementations. | Do not transfer separately; represented in `42curcus/rank2/minitalk`. |
+| `pushing-swap` | `ihashirr` | ✅ | Real Push Swap implementation with sorting algorithm, checker, linked-list/state handling and validation. | Do not transfer separately; represented in `42curcus/rank2/push_swap`. |
+| `printf-42` | `ihashirr` | ◐ | Custom formatted-output implementation. | Do not transfer separately; represented in `42curcus/rank1/ft_printf`. |
+| `42-libft` | `ihashirr` | ◐ | Foundational C utility library. | Do not transfer separately; represented in `42curcus/rank0/libft`. |
+| [`clevland`](https://github.com/iamhashir/clevland) | `iamhashir` | ◐ | BiomedCLIP/local-model medical-image/chat prototype. | Technically interesting, but resolve provenance/authorship presentation before featuring. |
+| `desizaiqa` | `iamhashir` | Private | ○ | Private AI/design-related work. | Deeper audit before case-study decision. |
 
 ---
 
-## Tier B — Useful breadth / earlier product work
+# Work already consolidated inside `42curcus`
 
-These are real projects, but they should sit behind the flagship set.
+One major correction from the earlier migration idea: **most old standalone 42 repos do not need to be transferred.**
 
-| Project | Account | Audit | Notes / action |
-|---|---|---|---|
-| `tourismApp` | `iamhashir` | ◐ | Large earlier tourism/frontend application. Choose one tourism repo as canonical and archive/test-hide the duplicates. |
-| `tourism_app` | `iamhashir` | ◐ | Another substantial tourism variant. Compare code/features against `tourismApp` before choosing canonical version. |
-| `tourism_final` | `iamhashir` | ○ | Tourism variant; likely consolidation candidate. |
-| `Travel_tourism_app` | `iamhashir` | ○ | Tourism variant; likely consolidation candidate. |
-| `tourism_test` | `iamhashir` | ○ | Deployment/test branch-style tourism repo; archive after canonical version is selected. |
-| `Monster-Roblox` | `iamhashir` | ○ | Game-development history. Needs source/screenshots audit before deciding whether it deserves stronger placement. |
-| `interacctive-surface` | `iamhashir` | ✅ | HTML Canvas drawing surface with mouse drawing, colors, line thickness, resize/reset and audio/assets. Nice creative-coding history, but technically small. |
-| `CodeLabII-2020-2021` | `iamhashir` | ○ | University-era development work; useful historical context. |
-| `Arduino` | `ihashirr` | ○ | Hardware/creative-computing history. Inspect before deciding if it should be shown in a broader creative-computing portfolio. |
-| `cube` | `ihashirr` | ○ | Needs implementation audit before ranking. |
-| `DRUM_KIT_PROJECT` | `ihashirr` | ○ | Earlier interactive/web work; useful learning history but not a current flagship. |
-| `portfolio` | `ihashirr` | ○ | Older personal portfolio, superseded by newer portfolio work. |
-| `hashir-portfolio` | `iamhashir` | ◐ | Older static portfolio. Superseded by `cv_portfolio`; archive/mark legacy. |
-| `web` | `ihashirr` | ○ | Generic older web repository; audit before deciding whether it contains unique work. |
-| `github` | `ihashirr` | ○ | Older generic repository; low priority until source proves otherwise. |
+`iamhashir/42curcus` already contains the progression:
 
----
+```text
+rank0  libft
+rank1  born2beroot · ft_printf · get_next_line
+rank2  fract-ol · minitalk · push_swap
+rank3  minishell · philosophers
+rank4  C++ modules · cub3d · netpractice
+rank5  C++ modules · ft_irc · inception
+rank6  ft_transcendence / MINA GAMES
+```
 
-## Tier C — Learning / coursework / small experiments
+Therefore these legacy standalone repos should normally stay legacy rather than creating duplicates on the main account:
 
-| Project | Account | Reason / action |
-|---|---|---|
-| `42utils` | `iamhashir` | Utility/archive material; useful inside the 42 story, weak as a standalone recruiter repo. |
-| `minish-under` | `iamhashir` | Minishell-related fragment; consolidate with `MINISHELLING`/`42curcus`. |
-| `42sp-piscine` | `iamhashir` | Early 42 exercises. Keep as history or archive. |
-| `42_examRank2` | `iamhashir` | Exam practice. Unfeature/archive. |
-| `42-exam-lost` | `iamhashir` | Exam-related practice. Unfeature/archive. |
-| `42_exam_rank_5` | `ihashirr` | Exam/practice material. Unfeature. |
-| `React-Clone` | `iamhashir` | Small clone/learning project unless future code audit reveals more. |
-| `Color-Switch-Replica` | `iamhashir` | Replica/learning project. |
-| `2nd_clone` | `iamhashir` | Clone/practice naming and older work; audit only if there is reason to preserve publicly. |
-| `Clone_1` | `iamhashir` | Clone/practice project. |
-| `Clone_task_3` | `iamhashir` | Clone/task project. |
-| `react_tail` | `iamhashir` | Small React/Tailwind experiment. |
-| `Smart_app_1` | `iamhashir` | **Downgraded after source audit.** It is an older Expo “Fruits Animating Calculator,” not the restaurant-management app from the CV. |
-| `web-page` | `iamhashir` | Generic early web project; keep only if a later code audit finds a distinct feature/story. |
-| `pushing-swap` | `ihashirr` | 42/practice history; inspect if needed, otherwise keep secondary. |
+- `ihashirr/42-libft`
+- `ihashirr/printf-42`
+- `ihashirr/minitalk`
+- `ihashirr/pushing-swap`
+- `ihashirr/cube`
+- old exam repositories
 
----
+### Exception: `IRC`
 
-## Tier D — Empty / tutorial / profile noise
+`IRC` deserves a standalone transfer because it is strong enough to be a recruiter-facing networking project and is already referenced as the `rank5/ft_irc` submodule.
 
-| Project | Account | Action |
-|---|---|---|
-| `github-slideshow` | `iamhashir` | GitHub tutorial → archive. |
-| `story` | `iamhashir` | Empty → archive/delete if unnecessary. |
-| `pushing-swap` | `iamhashir` | Empty → archive/delete. |
-| `hassan_philo` | `iamhashir` | Empty public repo → archive/delete. |
-| `hasan_philo` | `iamhashir` | Empty private repo → archive/delete if unnecessary. |
-| `philo` | `ihashirr` | Empty/duplicate old-account repo → ignore in favor of `iamhashir/philo`. |
-| `42Core` | `ihashirr` | Empty old-account repository → archive/ignore. |
-| `rush-group-project` | `ihashirr` | Empty → archive/ignore. |
+After `ihashirr/IRC` is transferred to `iamhashir/IRC`, update:
+
+```text
+iamhashir/42curcus/.gitmodules
+```
+
+from:
+
+```text
+https://github.com/ihashirr/IRC.git
+```
+
+to:
+
+```text
+https://github.com/iamhashir/IRC.git
+```
 
 ---
 
-# Profile / infrastructure repository
+# Duplicate / legacy families
 
-| Repository | Purpose |
+## Portfolio family
+
+- `ihashirr/portfolio`
+- `iamhashir/hashir-portfolio`
+- `iamhashir/cv_portfolio`
+- `iamhashir/mit_portfolio` (private)
+
+`ihashirr/portfolio` and `iamhashir/hashir-portfolio` share essentially the same older static portfolio structure/assets. They should **not both be migrated or promoted**.
+
+**Canonical public portfolio:** `iamhashir/cv_portfolio`.
+
+## Audify
+
+- `ihashirr/Audify`
+- `iamhashir/Audify`
+
+Use **`iamhashir/Audify`** as the canonical copy. Do not transfer the old duplicate.
+
+## Tourism family
+
+- `iamhashir/tourism_app` ← **canonical source**
+- `iamhashir/tourismApp`
+- `iamhashir/tourism_final`
+- `iamhashir/Travel_tourism_app`
+- `iamhashir/tourism_test`
+
+Keep `tourism_app` as the meaningful source repo. The others should eventually be archived/unfeatured after verifying nothing unique remains.
+
+## Philosophers
+
+- `ihashirr/philo` — empty legacy repo
+- `iamhashir/philo` — populated
+- `42curcus/rank3/philosphers` — consolidated curriculum copy
+
+Use the `iamhashir` version / `42curcus` story.
+
+---
+
+# Repositories that should NOT move to the main account
+
+| Repository | Why |
 |---|---|
-| `iamhashir/iamhashir` | GitHub profile README, profile assets, workflows and this repository-audit file. It is profile infrastructure, not a software-project ranking entry. |
+| `ihashirr/web` | Source/README identifies the upstream project as `hoisie/web`; not suitable as Malik portfolio work. |
+| `ihashirr/github` | GitHub Skills “Introduction to GitHub” tutorial/template. |
+| `ihashirr/DRUM_KIT_PROJECT` | Current repository contains only a tiny README and no implementation. |
+| `ihashirr/42Core` | Empty. |
+| `ihashirr/rush-group-project` | Empty. |
+| `ihashirr/philo` | Empty duplicate. |
+| `ihashirr/portfolio` | Legacy duplicate of older portfolio material. |
+| `ihashirr/Audify` | Duplicate; canonical copy already exists on `iamhashir`. |
+| exam repos | Useful history, weak recruiter signal and already covered by the broader 42 story. |
 
 ---
 
-# README / presentation priority queue
+# Recommended account-transfer queue
 
-A strong repository with no README is **not** a weak project. The README is simply the missing interface between the code and a recruiter.
+Repository ownership transfer must be done manually in GitHub settings. The connector currently cannot change repository ownership.
 
-## Completed in this audit
+## Phase 1 — High-value transfers
 
-- ✅ `iamhashir/MINISHELLING` — replaced a two-line README with tokenizer/parser/AST/execution architecture documentation.
-- ✅ `iamhashir/Twitter_clone` — added README explaining the actual C++/openFrameworks data-visualization implementation.
-- ✅ `iamhashir/MultiPage` — added README documenting the React Native food-ordering UI and its true scope.
-- ✅ `ihashirr/mess-manager` — replaced stale Firestore-only documentation with the current offline-first SQLite/sync/OCR architecture.
+1. **`ihashirr/IRC` → `iamhashir/IRC`**
+   - public systems/networking flagship
+   - README already upgraded
+   - after transfer, update `42curcus/.gitmodules`
 
-Already improved earlier:
+2. **`ihashirr/mess-manager` → `iamhashir/mess-manager`**
+   - keep private
+   - strongest modern mobile/offline-first project
+   - README already upgraded
 
+3. **`ihashirr/secret-hitler` → `iamhashir/secret-hitler`**
+   - public real-time project
+   - rebuild README after transfer
+
+4. **`ihashirr/Code-Smith` → `iamhashir/Code-Smith`**
+   - public product/data workflow app
+   - rebuild README after transfer
+
+## Phase 2 — Useful breadth
+
+5. **`ihashirr/Qrcode_nisrine` → `iamhashir/Qrcode_nisrine`**
+   - only after checking whether all public client/business information is appropriate to expose
+
+6. **`ihashirr/Movie-Recommendation-System` → `iamhashir/Movie-Recommendation-System`**
+   - optional ML/data-science supporting project
+
+7. **`ihashirr/Arduino` → `iamhashir/Arduino`**
+   - optional embedded/IoT supporting project
+
+---
+
+# README / presentation work completed
+
+- ✅ `iamhashir/42curcus`
 - ✅ `iamhashir/Audify`
 - ✅ `iamhashir/Customer_service_agent`
-- ✅ `iamhashir/42curcus`
 - ✅ `iamhashir/cv_portfolio`
+- ✅ `iamhashir/MINISHELLING`
+- ✅ `iamhashir/Twitter_clone`
+- ✅ `iamhashir/MultiPage`
+- ✅ `iamhashir/tourism_app`
+- ✅ `ihashirr/mess-manager`
+- ✅ `ihashirr/IRC`
 
-## Highest-value documentation gaps remaining
+## Highest-value README work remaining
 
-1. **`ihashirr/Code-Smith`** — default Next.js README badly undersells a real data/fees/report-generation app. **Read-only through the current connection.**
-2. **`ihashirr/secret-hitler`** — substantial modern realtime game; needs architecture/game-state README. **Read-only through the current connection.**
-3. **`ihashirr/Movie-Recommendation-System`** — no README; add notebook methodology/results summary. **Read-only through the current connection.**
-4. **`iamhashir/clevland`** — README exists, but provenance/authorship needs clarification before making it recruiter-facing.
-5. **Tourism family** — inspect all variants, choose the strongest one, then give only that version a polished README and archive the rest.
-6. **`Monster-Roblox`** — source/screenshot audit before deciding whether documentation will meaningfully raise portfolio value.
-
----
-
-# Best public-facing set on `iamhashir`
-
-If the goal is a recruiter scanning the **current `iamhashir` profile**, the strongest public mix today is:
-
-1. `42curcus` — systems + realtime architecture
-2. `real_estate_management` — modern business/full-stack product
-3. `Customer_service_agent` — external API + automation/state
-4. `Audify` — AI-enabled full-stack app
-5. `cv_portfolio` — modern frontend/performance/design work
-6. `MINISHELLING` — direct Unix/process/parser systems proof
-
-`Twitter_clone` is now a much better secondary repo than its name suggests, and could replace `MINISHELLING` for a role emphasizing creative computing/native C++ visualization rather than backend/systems.
-
-Private projects such as `mess-manager` and `ipac-operations-app` may be stronger than several public repos, but they should be represented through **sanitized case studies** rather than exposing client/business data.
+1. `secret-hitler` — architecture/state-machine explanation after transfer
+2. `Code-Smith` — replace generic/default presentation after transfer
+3. `Movie-Recommendation-System` — methodology/results README if transferred
+4. `Arduino` — explain hardware architecture and show physical build/media if transferred
+5. `Qrcode_nisrine` — documentation is already strong; review privacy rather than rewrite for length
 
 ---
 
-# Main corrections from the first ranking
+# Main-profile pin strategy after consolidation
 
-The original ranking was too influenced by names and READMEs. Direct source inspection changed several conclusions:
+The final public six should show different engineering strengths rather than six similar web apps.
 
-- **`Smart_app_1` moved down** — source shows an older animated fruit calculator, not the modern restaurant app.
-- **`MultiPage` moved up** — source shows a real React Native food-ordering interface with navigation, product data and animation.
-- **`Twitter_clone` moved up significantly** — it is a native C++/openFrameworks tweet-data visualization, not a generic frontend clone.
-- **`MINISHELLING` moved up** — it contains a real tokenizer/parser/AST/expander/executor shell architecture hidden behind a two-line README.
-- **`mess-manager` entered the top tier** — its current source contains a serious offline-first mobile architecture and OCR expense workflow.
-- **`IRC` entered the top tier** — source shows a genuine nonblocking C++ network server with a `poll()` event loop and command dispatcher.
-- **`secret-hitler` entered the top tier** — modern Next/Convex game with a substantial backend state machine.
-- **`Code-Smith` moved high** — the default README hides authenticated data entry, fee state, reports and document-export APIs.
+### Target set
+
+1. **`minapong/ft_transcendence`** — collaboration + real-time + custom runtime
+2. **`iamhashir/42curcus`** — systems progression
+3. **`iamhashir/real_estate_management`** — business/full-stack product
+4. **`iamhashir/IRC`** — networking / non-blocking C++
+5. **`iamhashir/Customer_service_agent`** — external API + automation/state
+6. **`iamhashir/secret-hitler`** or **`iamhashir/Audify`** — real-time product vs AI product
+
+`mess-manager` may be technically stronger than several public repos, but if it remains private it should be represented by a sanitized case study rather than forcing it into the public pin set.
+
+---
+
+# Main-account cleanup candidates
+
+These are not deletion instructions. Archive only after verifying that no unique history/content needs to remain prominent.
+
+### Strong archive / unfeature candidates
+
+- `github-slideshow`
+- `story`
+- empty `pushing-swap`
+- `hassan_philo`
+- `hasan_philo`
+- `Clone_1`
+- `Clone_task_3`
+- `2nd_clone`
+- `React-Clone`
+- `42_examRank2`
+- `42-exam-lost`
+- duplicate tourism variants after canonical verification
+- `hashir-portfolio` after confirming `cv_portfolio` is fully canonical
+
+---
+
+# Important presentation rule
+
+The final `iamhashir/iamhashir` profile README should be rebuilt **after** the transfer and cleanup work, not before it.
+
+It should use:
+
+- one controlled custom visual identity
+- no broken third-party stat cards
+- no generic contribution-snake filler unless it is reliable and actually useful
+- factual project descriptions from inspected implementations
+- MINA GAMES as visible collaborative proof
+- a small number of strong projects
+- direct portfolio/CV/contact links
+- no inflated impact claims without evidence
 
 ---
 
 ## Rule going forward
 
-> **Inspect the code first. Improve the README second. Rank the engineering, not the marketing.**
-
-This file should be updated as the remaining provisional repositories receive deeper source audits.
+> **Rank the engineering, not the repository name or marketing. Consolidate duplicate history instead of duplicating it again.**
