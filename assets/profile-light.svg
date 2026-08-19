@@ -1,0 +1,82 @@
+<svg width="1200" height="390" viewBox="0 0 1200 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="20" x2="1130" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0284C7"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#C026D3"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" stroke="#0F172A" stroke-opacity="0.045"/>
+    </pattern>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .dash { animation: dash 10s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .pulse2 { animation: pulse 3s ease-in-out .8s infinite; }
+    .pulse3 { animation: pulse 3s ease-in-out 1.6s infinite; }
+    .float { animation: float 7s ease-in-out infinite; }
+    @keyframes dash { to { stroke-dashoffset: -120; } }
+    @keyframes pulse { 0%,100% { opacity:.35; transform:scale(.92); } 50% { opacity:1; transform:scale(1.08); } }
+    @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+  </style>
+
+  <rect width="1200" height="390" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="390" rx="28" fill="url(#grid)"/>
+  <rect x="34" y="34" width="1132" height="322" rx="22" stroke="#0F172A" stroke-opacity="0.08"/>
+
+  <text x="78" y="92" class="mono" font-size="15" letter-spacing="3" fill="#0284C7">MALIK HASHIR / @IAMHASHIR</text>
+  <text x="76" y="160" class="sans" font-size="54" font-weight="800" fill="#0F172A">FULL-STACK ENGINEER</text>
+  <text x="78" y="203" class="sans" font-size="25" font-weight="600" fill="url(#accent)">REALTIME · MOBILE · AI · SYSTEMS</text>
+  <text x="78" y="250" class="sans" font-size="18" fill="#475569">Building products where UI, state, data, networks and automation meet.</text>
+
+  <g transform="translate(78 286)">
+    <rect width="148" height="38" rx="19" fill="#FFFFFF" stroke="#0284C7" stroke-opacity="0.28"/>
+    <text x="74" y="24" class="mono" font-size="12" text-anchor="middle" fill="#075985">TYPESCRIPT</text>
+  </g>
+  <g transform="translate(238 286)">
+    <rect width="146" height="38" rx="19" fill="#FFFFFF" stroke="#7C3AED" stroke-opacity="0.28"/>
+    <text x="73" y="24" class="mono" font-size="12" text-anchor="middle" fill="#5B21B6">WEBSOCKETS</text>
+  </g>
+  <g transform="translate(396 286)">
+    <rect width="132" height="38" rx="19" fill="#FFFFFF" stroke="#C026D3" stroke-opacity="0.28"/>
+    <text x="66" y="24" class="mono" font-size="12" text-anchor="middle" fill="#86198F">SQLITE</text>
+  </g>
+  <g transform="translate(540 286)">
+    <rect width="124" height="38" rx="19" fill="#FFFFFF" stroke="#0284C7" stroke-opacity="0.28"/>
+    <text x="62" y="24" class="mono" font-size="12" text-anchor="middle" fill="#075985">C / C++</text>
+  </g>
+
+  <g class="float">
+    <path class="dash" d="M760 116 C842 72, 897 126, 955 98 C1017 68, 1066 91, 1120 62" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="10 10" opacity="0.72"/>
+    <path class="dash" d="M760 260 C826 226, 878 276, 936 235 C999 191, 1056 246, 1122 199" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="8 12" opacity="0.48"/>
+
+    <g transform="translate(798 112)">
+      <circle class="pulse" r="9" fill="#0284C7" filter="url(#glow)"/>
+      <text x="18" y="5" class="mono" font-size="13" fill="#075985">REACTOR</text>
+      <text x="18" y="23" class="mono" font-size="10" fill="#64748B">custom JSX runtime</text>
+    </g>
+    <g transform="translate(955 174)">
+      <circle class="pulse2" r="9" fill="#7C3AED" filter="url(#glow)"/>
+      <text x="18" y="5" class="mono" font-size="13" fill="#5B21B6">OFFLINE-FIRST</text>
+      <text x="18" y="23" class="mono" font-size="10" fill="#64748B">SQLite + sync queue</text>
+    </g>
+    <g transform="translate(835 266)">
+      <circle class="pulse3" r="9" fill="#C026D3" filter="url(#glow)"/>
+      <text x="18" y="5" class="mono" font-size="13" fill="#86198F">LOCAL AI</text>
+      <text x="18" y="23" class="mono" font-size="10" fill="#64748B">Mistral + Playwright</text>
+    </g>
+  </g>
+
+  <text x="1122" y="334" class="mono" font-size="12" text-anchor="end" letter-spacing="1.6" fill="#64748B">ABU DHABI, UAE</text>
+</svg>
