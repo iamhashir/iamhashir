@@ -12,160 +12,102 @@
 
 </div>
 
-## I build software where the interesting part is below the screen.
+# Software Engineer · Full-stack, realtime & systems
 
-Full-stack web and mobile products, realtime systems, low-level C/C++, and AI-assisted workflows. I care most about the parts that become difficult once software has real state: synchronization, protocols, data models, offline behavior, automation, and operational edge cases.
+**Abu Dhabi, UAE · TypeScript / Node.js / C / C++**
+
+I build state-heavy software across web, mobile and systems programming, with particular focus on **realtime applications, offline-first data flows, protocol-driven systems and developer tooling**.
+
+My strongest work is not about collecting frameworks. It is about owning difficult engineering problems: synchronization, rendering, networking, process control, data consistency and automation.
 
 ---
 
-## Flagship — MINA GAMES / Reactor
-
-<table>
-<tr>
-<td width="64%" valign="top">
+## Featured work
 
 ### [MINA GAMES — ft_transcendence](https://github.com/minapong/ft_transcendence)
 
-A **4-person realtime multiplayer platform** built at 42 Abu Dhabi with Pong, Connect 4, matchmaking, tournaments, profiles, statistics, social features, persistent data and containerized deployment.
+**Realtime multiplayer platform · 4-person team · 42 Abu Dhabi**
 
-My role covered **product ownership, project coordination and development**. My main engineering ownership was the frontend foundation: **Reactor**, a custom JSX runtime/framework built for the project.
+Built and coordinated a multiplayer platform with Pong, Connect 4, matchmaking, tournaments, profiles, statistics, social features and persistent data.
 
-Reactor includes:
+My main engineering ownership was the frontend architecture: I built **Reactor**, a custom JSX runtime/framework with hook-style state and lifecycle handling, client-side routing, deterministic rendering without a Virtual DOM, and framework-level modal/layout orchestration.
 
-- custom JSX runtime
-- hook-style state and lifecycle handling
-- client-side routing
-- deterministic rendering without a Virtual DOM
-- framework-level modal/layout orchestration
+I also contributed to the social/user layer and backend integration, while coordinating integration across **70+ reviewed pull requests**.
 
-I also contributed to the social/user layer and Fastify integration.
-
-**TypeScript · Fastify · WebSockets · Prisma · SQLite · Docker · NGINX**
-
-</td>
-<td width="36%" valign="top">
-
-### Engineering signal
-
-```text
-TEAM        4 developers
-WORKFLOW    70+ reviewed PRs
-FRONTEND    custom JSX runtime
-REALTIME    WebSockets
-BACKEND     Fastify
-DATA        Prisma + SQLite
-DELIVERY    Docker + NGINX
-```
-
-[open repository →](https://github.com/minapong/ft_transcendence)
-
-</td>
-</tr>
-</table>
+**Engineering focus:** frontend architecture · realtime state · framework design · team integration  
+**Stack:** TypeScript · Fastify · WebSockets · Prisma · SQLite · Docker · NGINX  
+[Open repository →](https://github.com/minapong/ft_transcendence)
 
 ---
-
-## Private systems / case studies
-
-<table>
-<tr>
-<td width="50%" valign="top">
 
 ### Mess Manager
-**Offline-first mobile operations app** · private repository
 
-React Native / Expo application for meal-service operations: customers, subscriptions, menus, attendance, payments, expenses and one-time orders.
+**Offline-first mobile operations system · private case study**
 
-The interesting part is the data path: **SQLite-first writes, dirty-record protection, a persistent sync queue, retry/failure state, remote reconciliation and OCR-assisted receipt entry with ML Kit**.
+Built a React Native / Expo application for meal-service operations covering customers, subscriptions, menus, attendance, payments, expenses and one-time orders.
 
-`React Native` `Expo` `SQLite` `Firebase` `OCR`
+The core challenge was reliable offline data handling. The system uses **SQLite-first writes, dirty-record protection, a persistent synchronization queue, retry/failure state and remote reconciliation**, plus OCR-assisted receipt entry with ML Kit.
 
-</td>
-<td width="50%" valign="top">
-
-### UI Analyzer
-**Local AI + browser automation** · private case study
-
-An automated UI-auditing workflow built around **Mistral running locally through llama.cpp**, browser extraction with **Playwright**, and **OCR/data extraction** to turn interfaces into analyzable structure without depending entirely on hosted model APIs.
-
-`Python` `llama.cpp` `Mistral` `Playwright` `OCR`
-
-</td>
-</tr>
-</table>
+**Engineering focus:** offline-first architecture · synchronization · operational workflows · data consistency  
+**Stack:** React Native · Expo · SQLite · Firebase · OCR
 
 ---
-
-## Public code worth opening
-
-<table>
-<tr>
-<td width="50%" valign="top">
 
 ### [IRC](https://github.com/iamhashir/IRC)
+
 **C++98 network server**
 
-Non-blocking TCP sockets, `poll()`, buffered client I/O, IRC parsing/dispatch, registration state, channels, modes and disconnect/error handling.
+Implemented an IRC server around **non-blocking TCP sockets and `poll()`**, with buffered client I/O, command parsing and dispatch, registration state, channels, modes, and disconnect/error handling.
 
-`C++` `sockets` `poll` `protocols`
+This is one of the best repositories to inspect for my systems work because the complexity is visible directly in the code: protocol handling, connection state and network edge cases rather than framework abstraction.
 
-</td>
-<td width="50%" valign="top">
-
-### [Eclipse / secret-hitler](https://github.com/iamhashir/secret-hitler)
-**Realtime state-machine game**
-
-Next.js client with a Convex-backed authoritative game engine covering elections, policy decks, legislative sessions, executive powers, win conditions and scheduled bot decisions.
-
-`Next.js` `Convex` `state machines` `realtime`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [Real Estate Management](https://github.com/iamhashir/real_estate_management)
-**Business workflow software**
-
-Properties, clients, agents, deal stages, commissions, activity history, search and reporting built as one operational application rather than disconnected CRUD screens.
-
-`Next.js` `TypeScript` `Convex`
-
-</td>
-<td width="50%" valign="top">
-
-### [MINISHELLING](https://github.com/iamhashir/MINISHELLING)
-**Unix shell implementation**
-
-Tokenizer and parser/AST, environment expansion, heredocs, pipes/redirections, built-ins, path resolution, process execution and signal handling.
-
-`C` `Unix` `processes` `file descriptors`
-
-</td>
-</tr>
-</table>
+**Engineering focus:** networking · protocols · state management · low-level I/O  
+**Stack:** C++98 · sockets · `poll()`  
+[Open repository →](https://github.com/iamhashir/IRC)
 
 ---
 
-## Background
+## More engineering work
 
-```text
-42 Abu Dhabi        Software Development & AI Applications · 2024 — present
-Bath Spa University BSc Creative Computing (Hons)              · 2020 — 2023
-Freelance            web / mobile / automation systems          · current
-Technical operations Etihad Arena & ADNEC                       · 2023 — 2025
-Location             Abu Dhabi, UAE
-```
+| Project | What it demonstrates | Stack |
+|---|---|---|
+| [MINISHELLING](https://github.com/iamhashir/MINISHELLING) | Unix shell with tokenizer/parser, expansion, heredocs, pipes, redirections, built-ins, process execution and signal handling | C · Unix · processes · file descriptors |
+| [Eclipse / secret-hitler](https://github.com/iamhashir/secret-hitler) | Realtime game state machine with authoritative game logic, elections, policy flow, executive powers, win conditions and scheduled bot decisions | Next.js · Convex · realtime · state machines |
+| [Real Estate Management](https://github.com/iamhashir/real_estate_management) | Operational business software covering properties, clients, agents, deal stages, commissions, activity history, search and reporting | Next.js · TypeScript · Convex |
+| **UI Analyzer** · private case study | Local-first UI auditing pipeline using browser extraction, OCR and locally hosted Mistral inference through llama.cpp | Python · llama.cpp · Mistral · Playwright · OCR |
 
-## Working set
+---
 
-`TypeScript` · `JavaScript` · `React` · `Next.js` · `React Native / Expo` · `Node.js` · `Fastify` · `WebSockets` · `Convex` · `Supabase` · `Firebase` · `SQLite` · `PostgreSQL` · `Prisma` · `C` · `C++` · `Docker` · `NGINX` · `OpenAI APIs` · `Mistral / llama.cpp` · `Playwright` · `OCR`
+## Experience & education
+
+**42 Abu Dhabi** — Software Development & AI Applications  
+2024 — present
+
+**Freelance** — Web, mobile and automation systems  
+Current
+
+**Technical Operations — Etihad Arena & ADNEC**  
+2023 — 2025
+
+**Bath Spa University** — BSc Creative Computing (Hons)  
+2020 — 2023
+
+**Location:** Abu Dhabi, UAE
+
+---
+
+## Core technologies
+
+**Languages:** TypeScript · JavaScript · C · C++ · Python  
+**Application:** React · Next.js · React Native / Expo · Node.js · Fastify  
+**Systems & data:** WebSockets · SQLite · PostgreSQL · Prisma · Convex · Firebase  
+**Delivery & tooling:** Docker · NGINX · Playwright · llama.cpp
 
 ---
 
 <div align="center">
 
-<a href="./REPOSITORIES.md"><b>implementation-first repository audit →</b></a>
+<a href="./REPOSITORIES.md"><b>Implementation-first repository audit →</b></a>
 
 <br/><br/>
 
